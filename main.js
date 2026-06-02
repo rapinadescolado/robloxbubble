@@ -51,7 +51,7 @@ submitButton.addEventListener("click", async () => {
     });
 
     const link = document.createElement("a");
-    link.download = "imagem.png";
+    link.download = `${bubbleText.innerText.split(" ")[0]}.png`;
     link.href = canvas.toDataURL("image/png");
     link.click();
 });
